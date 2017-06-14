@@ -19,7 +19,7 @@ bank2data=load_data.load_2year()
 X=bank2data[0]
 y=bank2data[1]
 
-X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.7,random_state=0)
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.3,random_state=0)
 
 #Set the parameters by Grid-search
 tuned_parameters={"max_depth":[3,None],

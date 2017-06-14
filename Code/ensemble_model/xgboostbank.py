@@ -24,7 +24,7 @@ X=bank2data[0]
 y=bank2data[1]
 X=np.asanyarray(X)
 
-X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.7,random_state=0)
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.3,random_state=0)
 
 tuned_parameters={"max_depth":[3,2,1],
                   "n_estimators":[15,20,25],}

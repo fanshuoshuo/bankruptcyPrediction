@@ -27,7 +27,7 @@ if(X.dtype.char in np.typecodes['AllFloat'] and not np.isfinite(X.sum()) and not
     print("error")
 
 
-X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.7,random_state=0)
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.3,random_state=0)
 
 if(X_train.dtype.char in np.typecodes['AllFloat'] and not np.isfinite(X_train.sum()) and not np.isfinite(X_train).All):
     print("error")
